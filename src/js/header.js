@@ -2,7 +2,6 @@ const contextMenu = document.querySelector('.context-menu');
 const menuBtn = document.querySelector('.nav-btn');
 const closeContextBtn = document.querySelector('.close-btn');
 const header = document.querySelector('.header');
-const menuIcon = document.querySelector('.menu-icon');
 
 menuBtn.addEventListener('click', onMenuButtonClick);
 
@@ -60,7 +59,7 @@ const sections = sectionIds
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.8,
+  threshold: 0.7,
 };
 
 const observer = new IntersectionObserver(entries => {
