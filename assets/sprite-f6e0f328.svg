@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.714" d="M9.714 23.429 23.428 9.715m.001 13.714L9.715 9.715"/>
+    </symbol>
+    <symbol id="icon-down-arrow" viewBox="0 0 41 32">
+      <path d="M41.333 12.37V0L21.077 19.361 0 0v12.37L21.077 32l20.256-19.63z"/>
+    </symbol>
+    <symbol id="icon-left-arrow" viewBox="0 0 25 32">
+      <path d="M15.424 0h9.719L9.931 15.682 25.143 32h-9.719L0 15.682 15.424 0z"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-width="2.286" d="M4.429 9.571h23.143M4.429 16h23.143M4.429 22.429h23.143"/>
+    </symbol>
+    <symbol id="icon-right-arrow" viewBox="0 0 25 32">
+      <path d="M9.719 0H0l15.212 15.682L0 32h9.719l15.424-16.318L9.719 0z"/>
+    </symbol>
+    <symbol id="icon-up-arrow" viewBox="0 0 41 32">
+      <path d="M41.333 19.63V32L21.077 12.639 0 32V19.63L21.077 0l20.256 19.63z"/>
+    </symbol>
+  </defs>
+</svg>
