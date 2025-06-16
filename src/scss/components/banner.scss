@@ -1,0 +1,106 @@
+.cookie-banner-section {
+  background: #fff;
+  padding: 40px 28px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    padding: 62px 108px;
+    max-width: 100%;
+    align-items: center;
+  }
+}
+
+.cookie-banner-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.91667;
+  color: #000;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 36px;
+    line-height: 0.61111;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.cookie-accept-btn {
+  background: #4fd7cc;
+  border-radius: 8px;
+  padding: 13px 12px;
+  max-width: 319px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 18px 12px;
+    width: 269px;
+  }
+}
+
+.cookie-decline-btn {
+  box-shadow: 0 1px 3px 0 #87614c;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 11.5px 12px;
+  max-width: 319px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 18px 12px;
+    width: 269px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}

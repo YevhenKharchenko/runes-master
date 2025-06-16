@@ -1,0 +1,65 @@
+.hero-section {
+  padding-top: 218px;
+  padding-bottom: 279px;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 304px;
+    padding-bottom: 304px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-text-wrapper {
+  border-radius: 16px;
+  padding: 16px 16px 86px 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 50px 0 rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 336px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    border-radius: 0;
+    padding: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+    background: none;
+    max-width: fit-content;
+    max-width: 529px;
+  }
+}
+
+.hero-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 44px;
+  }
+}
+
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

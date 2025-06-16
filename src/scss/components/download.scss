@@ -1,0 +1,26 @@
+.download-section {
+  padding-bottom: 150px;
+
+  @include media(desktop) {
+    padding-bottom: 169px;
+  }
+}
+
+.download-title {
+  margin-bottom: 24px;
+}
+
+.download-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  word-break: break-word;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 869px;
+    margin: 0 auto;
+  }
+}

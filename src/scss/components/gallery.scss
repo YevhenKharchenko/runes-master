@@ -1,0 +1,35 @@
+.gallery-section {
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-bottom: 150px;
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.arrow-btn {
+  background: #fee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.arrow-icon {
+  stroke: #292d32;
+  fill: none;
+}
