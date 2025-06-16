@@ -46,6 +46,10 @@
   font-size: 16px;
   color: #fff;
   transition: all 0.3s ease-in-out;
+
+  &:hover {
+    font-weight: 700;
+  }
 }
 
 .nav-list-link.active {

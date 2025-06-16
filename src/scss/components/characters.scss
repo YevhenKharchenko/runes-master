@@ -1,5 +1,5 @@
-.gallery-section {
-  padding-bottom: 179px;
+.characters-section {
+  padding-bottom: 144px;
 
   @include media(desktop) {
     padding-bottom: 200px;
@@ -8,31 +8,31 @@
   }
 }
 
-.gallery-title {
+.characters-title {
   @include media(desktop) {
     margin-bottom: 92px;
   }
 }
 
-.gallery-section-wrapper {
+.characters-section-wrapper {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
   @include media(desktop) {
-    max-width: 889px;
-    padding-bottom: 55px;
+    max-width: 848px;
+    padding-bottom: 40px;
   }
 }
 
-.gallery-container {
+.characters-container {
   padding-left: 0;
   padding-right: 0;
   position: relative;
 }
 
-.gallery-swiper-container {
+.characters-swiper-container {
   margin-left: auto;
   margin-right: auto;
   visibility: hidden;
@@ -41,14 +41,14 @@
   }
 }
 
-.gallery-swiper-container.show {
+.characters-swiper-container.show {
   visibility: visible;
 }
 
-.gallery-swiper-wrapper {
+.characters-swiper-wrapper {
 }
 
-.gallery-slide {
+.characters-slide {
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -61,23 +61,36 @@
   }
 }
 
-.gallery-img {
+.characters-img {
+  margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    width: 160px;
-    height: 240px;
+    width: 155px;
+    height: 154px;
   }
 }
 
-.gallery-arrow-btn {
+.characters-name {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.arrow-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease-in-out;
   position: absolute;
-  top: 255px;
+  top: 205px;
   z-index: 1;
 
   &:active {
@@ -85,7 +98,7 @@
   }
 
   @include media(desktop) {
-    top: 245px;
+    top: 255px;
 
     &:hover {
       transform: scale(1.1);
@@ -102,19 +115,19 @@
   }
 }
 
-.gallery-left-arrow {
+.left-arrow {
   left: 24px;
 
   @include media(desktop) {
-    left: 265px;
+    left: 255px;
   }
 }
 
-.gallery-right-arrow {
+.right-arrow {
   right: 24px;
 
   @include media(desktop) {
-    right: 265px;
+    right: 255px;
   }
 }
 

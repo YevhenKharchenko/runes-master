@@ -1,26 +1,36 @@
 .download-section {
-  padding-bottom: 150px;
+  padding-bottom: 167px;
 
   @include media(desktop) {
-    padding-bottom: 169px;
+    padding-bottom: 271px;
   }
 }
 
 .download-title {
-  margin-bottom: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .download-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
   text-align: center;
-  color: #000;
+  color: #fff;
   word-break: break-word;
 
   @include media(desktop) {
-    font-size: 24px;
-    max-width: 869px;
+    font-size: 30px;
+    max-width: 567px;
     margin: 0 auto;
   }
 }

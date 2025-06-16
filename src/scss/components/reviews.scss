@@ -1,8 +1,8 @@
 .reviews-section {
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 
   @include media(desktop) {
-    padding-bottom: 150px;
+    padding-bottom: 200px;
   }
 }
 
@@ -10,59 +10,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
   }
 }
 
 .reviews-list-item {
-  border: 3px solid #dadada;
-  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
 
   @include media(desktop) {
-    max-width: 344px;
-  }
-}
-
-.reviews-rating-img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.reviews-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #000;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.reviews-name {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  color: #000;
-
-  @include media(desktop) {
-    font-size: 20px;
+    max-width: 485px;
   }
 }
 
 .reviews-avatar-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -60px;
+}
+
+.reviews-name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.reviews-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+.reviews-arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 37px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.reviews-arrow-icon {
+  fill: #fff;
 }

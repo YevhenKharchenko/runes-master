@@ -1,31 +1,53 @@
-const gallerySlides = document.querySelectorAll('.gallery-list-item');
-const galleryBtn = document.getElementById('galleryDownArrow');
-const galleryBtnIcon = galleryBtn.querySelector('.arrow-icon');
-let currentIndex = 0;
-let direction = 'forward';
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
 
-function updateGallerySlides() {
-  gallerySlides.forEach((slide, i) => {
-    slide.style.display =
-      i >= currentIndex && i < currentIndex + 4 ? 'block' : 'none';
-  });
+const galleryLeftArrow = document.getElementById('galleryLeftArrow');
+const galleryRightArrow = document.getElementById('galleryRightArrow');
 
-  if (currentIndex + 4 >= gallerySlides.length) {
-    galleryBtnIcon.style.transform = 'rotate(180deg)';
-    direction = 'backward';
-  } else if (currentIndex === 0) {
-    galleryBtnIcon.style.transform = 'rotate(0deg)';
-    direction = 'forward';
-  }
-}
+let gallerySwiper;
 
-galleryBtn.addEventListener('click', () => {
-  if (direction === 'forward') {
-    currentIndex = Math.min(currentIndex + 4, gallerySlides.length - 4);
-  } else {
-    currentIndex = Math.max(currentIndex - 4, 0);
-  }
-  updateGallerySlides();
+gallerySwiper = new Swiper('.gallery-swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  initialSlide: 1,
+  spaceBetween: 100,
+  grabCursor: true,
+  allowTouchMove: true,
+  speed: 500,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+  on: {
+    init: () => {
+      document.querySelector('.gallery-swiper-container').classList.add('show');
+    },
+    slideChange: function () {
+      updateGalleryArrows(this);
+    },
+  },
 });
 
-updateGallerySlides();
+updateGalleryArrows(gallerySwiper);
+
+function updateGalleryArrows(swiper) {
+  galleryLeftArrow.disabled = swiper.isBeginning;
+  galleryRightArrow.disabled = swiper.isEnd;
+}
+
+galleryLeftArrow.addEventListener('click', () => {
+  gallerySwiper.slidePrev();
+});
+
+galleryRightArrow.addEventListener('click', () => {
+  gallerySwiper.slideNext();
+});
