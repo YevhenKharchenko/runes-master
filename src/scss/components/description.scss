@@ -1,0 +1,30 @@
+.description-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 200px;
+  }
+}
+
+.description-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+.description-span {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #fee801;
+
+  &:not(:first-child) {
+    font-style: italic;
+  }
+}

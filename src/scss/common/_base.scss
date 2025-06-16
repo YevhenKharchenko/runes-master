@@ -1,7 +1,13 @@
 :root {
   font-family: 'Lato', sans-serif;
   color: $_main_color;
-  background: $_main_bg_color;
+  background: linear-gradient(
+    90deg,
+    #143562 0%,
+    #1a437b 42.31%,
+    #1a437b 62.02%,
+    #143562 100%
+  );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,8 +43,8 @@ html {
 
   @include media(desktop) {
     max-width: 1440px;
-    padding-right: 172px;
-    padding-left: 172px;
+    padding-right: 158px;
+    padding-left: 158px;
   }
 }
 
